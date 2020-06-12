@@ -158,8 +158,9 @@ let total = myNumbers.reduce(function(acc, curr){
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
-let myNumbersIndex = myNumbers.forEach(function(num, index){
-	return index;
+let myNumbersIndex = [];
+ myNumbers.forEach(function(num, index){
+	myNumbersIndex.push(index);
 })
 //////////////////PROBLEM 18////////////////////
 
@@ -193,10 +194,13 @@ let enemies = people.filter(function(value){
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-let awesome = 0;
+let awesome = 0; //once again this one bugs me, I dont fully get it but it works...
 let totallyAwesome = people.reduce(function(acc, curr){
-	acc.awesomeLevel += curr.awesomeLevel;
-
-	return acc.awesomeLevel;
+	if(acc.awesomeLevel){
+		awesome += acc.awesomeLevel; //WHY ARE YOU NOT A NUMBER
+	}
+	awesome += curr.awesomeLevel;
+	alert(acc.awesomeLevel);
+	return awesome;
 
 })
