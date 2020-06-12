@@ -194,7 +194,7 @@ let enemies = people.filter(function(value){
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-let awesome = 0; //once again this one bugs me, I dont fully get it but it works...
+let awesome = 0; //once again this one bugs me, I dont fully get it but it works. sources online said to use a different function to handle objects so idk
 let totallyAwesome = people.reduce(function(acc, curr){
 	if(acc.awesomeLevel){
 		awesome += acc.awesomeLevel; //WHY ARE YOU NOT A NUMBER

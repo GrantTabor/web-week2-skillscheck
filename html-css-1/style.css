@@ -1,0 +1,78 @@
+header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 50px
+
+}
+span{
+    padding: 0 10px
+}
+body{
+
+}
+#know{
+    background: black;
+    color: yellow;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#know h1{
+    font-size: 60px;
+}
+
+#round-box-holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.rounded-box{
+    height: 200px;
+    width: 200px;
+    background: turquoise;
+    border-radius: 25px;
+}
+
+#square-box-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.square-box{
+    background: orange;
+    height: 250px;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#info{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text{
+    width: 400px;
+    font-size: 12px;
+    margin-right: 200px;
+}
+img{
+    margin-left: 100px;
+    height: 150px;
+    width: 200px;
+}
+
+footer{
+    background-color: indigo;
+    height: 10vh;
+}
